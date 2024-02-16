@@ -4,20 +4,20 @@ import Image from "next/image";
 import NavBar from "@/nav/NavBare";
 export default function Header(){
     return(
-        <div className="flex h-24 bg-cyan700 justify-between">
-            <div className="logo bg-black w-[50vw] lg:w-[30vw] flex justify-around">
-                <div className="mt-1">
+        <div className="flex h-24 justify-between pt-4">
+            <div className="logo  w-[50vw] lg:w-[30vw] flex justify-center">
+                <div className="mt-1  mr-[1vw]">
                     <Image
                         src="/assets/Frame.png"
-                        width={80}
-                        height={82}
+                        width={91}
+                        height={92}
                         alt="Hydra Logo"
                     />
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 mr-[1vw]">
                     <Image
                         src="/assets/Hydra.png"
-                        width={46}
+                        width={49}
                         height={76}
                         alt="Hydra Logo"
                     />
@@ -25,10 +25,18 @@ export default function Header(){
             </div>
 
             <NavBar/>
-            
-            <div className="flex justify-around bg-red-100 w-[50vw] lg:w-[30vw]">
+            <div className="lg:hidden flex justify-end items-center w-[50vw] lg:w-[30vw]">
+                    <Image
+                        className=" mr-[4vw]"
+                        src="/assets/Hamburger-Button.png"
+                        width={33}
+                        height={26}
+                        alt="Hydra Logo"
+                    />
+            </div>
+            <div className="hidden lg:flex justify-around  w-[50vw] lg:w-[30vw]">
                 <div className="login mt-6">
-                    <button type="button" className="text-gray-800 text-[12px] font-nav font-semibold  border-black border-solid border-2 rounded-3xl p-3 pl-6 pr-6">CONTACT US</button>
+                    <button type="button" className="text-gray-200 text-[12px] font-nav font-semibold  border-gray-200 border-solid border-2 rounded-3xl p-3 pl-6 pr-6">CONTACT US</button>
                 </div>
                 
                 <div className="signUp mt-6">

@@ -5,7 +5,7 @@ import Landing from "@/components/Landing";
 export default function Home() {
   return (
     <main>
-      <div className="landing bg-slate-700 h-dvh">
+      <div className="landing bg-custom-blue h-dvh ">
         <Header/>
         <Landing/>
       </div>

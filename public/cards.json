@@ -1,0 +1,26 @@
+[
+    {
+        "img":"/assets/MaskGroup-4.png",
+        "title":"SIMULATION",
+        "subTitle":"Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "link":""        
+    },
+    {
+        "img":"/assets/MaskGroup-1.png",
+        "title":"EDUCATION",
+        "subTitle":"Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "link":""
+    },
+    {
+        "img":"/assets/MaskGroup-2.png",
+        "title":"SELF-CARE",
+        "subTitle":"Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "link":""
+    },
+    {
+        "img":"/assets/MaskGroup-3.png",
+        "title":"OUTDOOR",
+        "subTitle":"Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "link":""
+    }
+]

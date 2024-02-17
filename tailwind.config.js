@@ -20,8 +20,8 @@ module.exports = {
       },
       colors: {
         'custom-blue': '#302C42',
-        'custom-radial1': '#3A3456',
-        'custom-radial2': '#211e2e',
+        'custom-radial1': '#393354',
+        'custom-radial2': '#272338',
         'custom-purple': '#9E94C9',
         'custom-dark-gray': '#2A2639',
       },

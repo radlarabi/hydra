@@ -58,20 +58,20 @@ export default function Landing(){
                     />
                 </div>
 
-            </div>
-                <div className="flex justify-center bg-gradient-radial from-custom-radial1 to-custom-radial2  rounded-[150px] ml-[5vw] mr-[4vw]">
+            </div> 
+                <div className="flex bg-gradient-radial from-custom-radial1 to-custom-radial2 ml-[3vw] mr-[3vw] rounded-[100px] h-[12vh]">
                     {
                         contact.map((item, index) => (
-                            <div className=" h-[13vh] pt-[4vh] item-center">
-                                <div key={index} className={`flex justify-center item-center h-[7vh]  ${index == 0 ? '' : 'border-l'}  pl-[1vw] pr-[1vw]`}>
+                            <div className={"w-full flex justify-center items-center"}>
+                                <div key={index} className={` flex flex-row justify-center items-center h-[7vh] ${index == 0 ? '' : 'border-l'} w-full`}>
                                     <Image
-                                        className="ml-[3vw] mr-[3vw] h-[51px] w-[40px]"
+                                        className=""
                                         src={item.img}
                                         alt={item.title}
                                         width={50}
                                         height={61}
                                     />
-                                    <div className="">
+                                    <div className="ml-[1vw]">
                                         <div className="text-[24px] text-gray-200">{item.title}</div>
                                         <div className="text-[12px] text-gray-200">{item.subTitle}</div>
                                     </div>

@@ -24,6 +24,8 @@ module.exports = {
         'custom-purple-rounded': '#1D1B26',
         'custom-dark-gray': '#2A2639',
         'purple-card': '#211E2D',
+        'purple-step': '#B3A9DC',
+        'border-steps': '#252231',
       },
     },
   },

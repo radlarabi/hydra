@@ -11,9 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'tech': "url('/assets/MaskGroup5.png')",
       },
       fontFamily: {
         'nav': ['Montserrat', 'sans-serif'],
@@ -23,7 +21,9 @@ module.exports = {
         'custom-radial1': '#393354',
         'custom-radial2': '#272338',
         'custom-purple': '#9E94C9',
+        'custom-purple-rounded': '#1D1B26',
         'custom-dark-gray': '#2A2639',
+        'purple-card': '#211E2D',
       },
     },
   },

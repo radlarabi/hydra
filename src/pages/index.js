@@ -7,6 +7,7 @@ import Cards from "@/components/Cards"
 import Partners from "@/components/Partners"
 import HowHydra from "@/components/HowHydra"
 import JoinForm from "@/components/JoinForm"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       </div>
       <div className="cards ">
         <JoinForm/>
+      </div>
+      <div className="footer ">
+        <Footer/>
       </div>
     </main>
   );

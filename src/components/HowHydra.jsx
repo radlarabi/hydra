@@ -2,7 +2,7 @@ import Image from "next/image"
 import steps from "../../public/steps.json"
 export default function HowHydra(){
     return (
-        <div className="min-h-[50vh] flex flex-col">
+        <div className=" flex flex-col">
             <div className="introTitle  flex flex-row">
                 <div className="intro1  h-full w-[50vw] flex flex-col pl-[2vw]">
                     <div className="title  w-full h-full flex justify-start items-end ">
@@ -33,10 +33,10 @@ export default function HowHydra(){
                     </p>
                 </div>
             </div>
-            <div className="flex flex-row justify-around items-center min-h-[30vh]">
+            <div className="flex flex-row justify-around items-center ">
                 {
                     steps.map((step, index) => (
-                        <div key={index} className=" flex flex-col min-h-[30vh] justify-around items-center">
+                        <div key={index} className=" flex flex-col  justify-around items-center">
                             <p className="text-[64px] font-bold text-custom-blue pl-[2vh] pr-[2vh] rounded-[50%] font-nav border-[10px] border-border-steps bg-purple-step">
                                 0{index + 1}
                             </p>

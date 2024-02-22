@@ -4,7 +4,7 @@ import Image from "next/image";
 import NavBar from "@/nav/NavBare";
 export default function Header(){
     return(
-        <div className="flex h-24  justify-between pt-4">
+        <div className="flex justify-between pt-4">
             <div className="logo  w-[50vw] lg:w-[30vw] flex justify-center">
                 <div className="mt-1  mr-[1vw]">
                     <Image

@@ -4,10 +4,10 @@ import contact from "../../public/contact.json"
 
 export default function Landing(){
     return(
-        <div className="landing min-h-[85vh]">
-            <div className="main_title flex flex-col-reverse lg:flex-row min-h-[72vh]">
+        <div className="landing ">
+            <div className="main_title flex flex-col-reverse lg:flex-row ">
                 
-                <div className="title w-[100vw]  flex flex-col items-center justify-center "> 
+                <div className="title w-full  flex flex-col items-center justify-center "> 
                     
                     <div className="mainTitle  w-full mb-2">
                         

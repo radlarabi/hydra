@@ -37,17 +37,17 @@ export default function Footer(){
                         }
                     </ul>
                 </div>
-                <div className="socialMedia   w-full  ml-[1vw] mr-[1vw] flex flex-col justify-center items-center">
+                <div className="socialMedia  gap-6 w-full flex flex-col justify-center items-center">
                     <div className="  w-full flex items-center justify-center">
                         <p className="text-slate-200 text-[16px] font-nav font-semibold">
                             SOCIALIZE WITH HYDRA
                         </p>
                     </div>
                     <div className="  w-full flex items-center justify-center">
-                        <ul className="flex  items-center justify-center">
+                        <ul className="flex  items-center justify-center gap-6">
                             {
                                 medias.map((media, index) => (
-                                <li key={index} className="text-slate-200 pt-[1vh] pb-[1vh] text-[16px] font-nav font-semibold pl-[1vw] pr-[1vw] ">
+                                <li key={index} className="text-slate-200 text-[16px] font-nav font-semibold">
                                     <Image
                                         src={media.link}
                                         width={32}
@@ -60,7 +60,7 @@ export default function Footer(){
                     </div>
                     <div className="  w-full flex items-center justify-center">
                         <div className="signUp">
-                            <button type="button" className="submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold p-4 bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl lg:pl-10 lg:pr-10 pr-[6vw] pl-[6vw]">
+                            <button type="button" className="p-[1rem] submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl">
                                 BUILD YOUR WORLD
                             </button>
                         </div>           

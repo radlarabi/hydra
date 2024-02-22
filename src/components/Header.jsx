@@ -5,7 +5,7 @@ import NavBar from "@/nav/NavBare";
 export default function Header(){
     return(
         <div className="flex justify-between pt-4">
-            <div className="logo  w-[50vw] lg:w-[30vw] flex justify-center">
+            <div className="logo flex justify-center">
                 <div className="mt-1  mr-[1vw]">
                     <Image
                         src="/assets/Frame.png"
@@ -25,7 +25,7 @@ export default function Header(){
             </div>
 
             <NavBar/>
-            <div className="lg:hidden flex justify-end items-center w-[50vw] lg:w-[30vw]">
+            <div className="lg:hidden flex justify-end items-center">
                     <Image
                         className=" mr-[4vw]"
                         src="/assets/Hamburger-Button.png"
@@ -34,7 +34,7 @@ export default function Header(){
                         alt="Hydra Logo"
                     />
             </div>
-            <div className="hidden lg:flex justify-around  w-[50vw] lg:w-[30vw]">
+            <div className="hidden lg:flex justify-around ">
                 <div className="login mt-6">
                     <button type="button" className="text-gray-200 text-[12px] font-nav font-semibold  border-gray-200 border-solid border-2 rounded-3xl p-3 pl-6 pr-6">CONTACT US</button>
                 </div>

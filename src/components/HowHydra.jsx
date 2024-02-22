@@ -4,17 +4,17 @@ export default function HowHydra(){
     return (
         <div className=" flex flex-col">
             <div className="introTitle  flex flex-row">
-                <div className="intro1  h-full w-[50vw] flex flex-col pl-[2vw]">
-                    <div className="title  w-full h-full flex justify-start items-end ">
+                <div className="intro1 flex flex-col pl-[2vw]">
+                    <div className="title flex justify-start items-end ">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] font-semibold text-[36px]">
                             HOW WE BUILD
                         </p>
                     </div>
-                    <div className="subtitle  w-full h-full flex  ">
+                    <div className="subtitle flex  ">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px]">
                             WITH HYDRA VR?
                         </p>
-                        <div className="h-full flex pl-[2vw] justify-start items-start">
+                        <div className="flex pl-[2vw] justify-start items-start">
                             <Image
                                 className="h-[100px] w-[220px]"
                                 src={"/assets/flesh.png"}
@@ -24,7 +24,7 @@ export default function HowHydra(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 bg-pue-200 h-full w-[50vw] flex justify-center items-center">
+                <div className="intro2 bg-pue-200 flex justify-center items-center">
                     <p className="text-[14px] text-slate-50 font-nav tracking-[0.1rem] ">
                     Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -36,7 +36,7 @@ export default function HowHydra(){
             <div className="flex flex-row justify-around items-center ">
                 {
                     steps.map((step, index) => (
-                        <div key={index} className=" flex flex-col  justify-around items-center">
+                        <div key={index} className=" flex flex-col justify-around items-center">
                             <p className="text-[64px] font-bold text-custom-blue pl-[2vh] pr-[2vh] rounded-[50%] font-nav border-[10px] border-border-steps bg-purple-step">
                                 0{index + 1}
                             </p>

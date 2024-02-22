@@ -7,9 +7,9 @@ export default function Landing(){
         <div className="landing ">
             <div className="main_title flex flex-col-reverse lg:flex-row ">
                 
-                <div className="title w-full  flex flex-col items-center justify-center "> 
+                <div className="title  flex flex-col items-center justify-center "> 
                     
-                    <div className="mainTitle  w-full mb-2">
+                    <div className="mainTitle  mb-2">
                         
                         <div className="title1 flex flex-row lg:justify-start ml-[5vw] justify-center ">
                             <span className="pr-2 text-custom-purple font-bold lg:text-[2.6rem] text-[2.3rem] leading-1 tracking-wider">Dive </span>
@@ -23,7 +23,7 @@ export default function Landing(){
 
                     </div>
 
-                    <div className="subTitle lg:flex hidden  w-full">
+                    <div className="subTitle lg:flex hidden ">
                         <p className="font-nav text-[15px] content-start ml-[5vw] mt-3 text-gray-300 tracking-[0.09rem] leading-[1.9rem]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/> 
                                 sed do eiusmod tempor incididunt ut labore et dolore <br/>
@@ -31,7 +31,7 @@ export default function Landing(){
                         </p>
                     </div>
 
-                    <div className="  w-full flex lg:justify-start justify-center items-center ">
+                    <div className="  flex lg:justify-start justify-center items-center ">
                         <button className="submit ml-[5vw] tracking-wider text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl lg:pl-6 lg:pr-6 pr-[6vw] pl-[6vw]">
                             BUILD YOUR WORLD
                         </button>
@@ -62,7 +62,7 @@ export default function Landing(){
                 {
                     contact.map((item, index) => (
                         <div className={"w-full flex justify-center items-center"}>
-                            <div key={index} className={` flex flex-row justify-center items-center  ${index == 0 ? '' : 'border-l'} w-full`}>
+                            <div key={index} className={` flex flex-row justify-center items-center  ${index == 0 ? '' : 'border-l'}`}>
                                 <Image
                                     className=""
                                     src={item.img}

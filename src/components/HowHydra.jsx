@@ -33,7 +33,7 @@ export default function HowHydra(){
                     </p>
                 </div>
             </div>
-            <div className="flex flex-row justify-around items-center ">
+            <div className="flex lg:flex-row flex-col justify-around items-center ">
                 {
                     steps.map((step, index) => (
                         <div key={index} className=" flex flex-col justify-around items-center">

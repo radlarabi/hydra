@@ -1,8 +1,30 @@
 'use client'
 import Image from "next/image"
 import contact from "../../public/contact.json"
-
+import { useState, useEffect } from "react";
 export default function Landing(){
+    const [screenSize, setScreenSize] = useState({width: 0, height: 0})
+    const [index, setIndex] = useState(0)
+
+    const incIndex = () =>{
+        index == 2 ? setIndex(0) : setIndex(index + 1)
+    }
+    
+    const decIndex = () =>{
+        index == 0 ? setIndex(2) : setIndex(index - 1)
+    }
+
+    useEffect(() => {
+        const updateSize = () => {
+            setScreenSize({width: window.innerWidth, height: window.innerHeight})
+        }
+
+        updateSize()
+
+        window.addEventListener('resize', updateSize)
+
+        return () => window.removeEventListener('resize', updateSize)
+    }, [])
     return(
         <div className="landing ">
             <div className="main_title flex flex-col-reverse lg:flex-row ">
@@ -48,7 +70,7 @@ export default function Landing(){
 
                 </div> 
 
-                <div className="imageVr   w-[100vw]   flex justify-center items-center ">           
+                <div className="imageVr flex justify-center items-center ">           
                     <Image
                         className="border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px] lg:h-[426px] h-[276px] lg:w-[490px] w-[340px]"
                         src="/assets/Mask_group.png"
@@ -58,8 +80,9 @@ export default function Landing(){
                 </div>
 
             </div> 
-            <div className="flex bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card ml-[3vw] mr-[3vw] rounded-[100px] min-h-[12vh] ">
+            <div className="flex justify-center  bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card mx-[3vw] my-[20px] rounded-[100px] min-h-[12vh] ">
                 {
+                    screenSize.width >= 930 ?
                     contact.map((item, index) => (
                         <div className={"w-full flex justify-center items-center"}>
                             <div key={index} className={` flex flex-row justify-center items-center  ${index == 0 ? '' : 'border-l'}`}>
@@ -77,22 +100,40 @@ export default function Landing(){
                             </div>
                         </div>
                     ))
+                    :
+                    <div className="flex justify-between items-center w-full mx-4">
+                        <Image
+                            className=""
+                            src={"/assets/chevron-circle-right.png"}
+                            alt={"left"}
+                            width={35}
+                            height={35}
+                            onClick={incIndex}
+                            />
+                        <div className="flex flex-row justify-center items-center">
+                            <Image
+                                className=""
+                                src={contact[index].img}
+                                alt={contact[index].title}
+                                width={50}
+                                height={61}
+                                />
+                            <div className="ml-[1vw]">
+                                <div className="text-[24px] text-gray-200">{contact[index].title}</div>
+                                <div className="text-[12px] text-gray-200">{contact[index].subTitle}</div>
+                            </div>
+                        </div>
+                        <Image
+                            className=""
+                            src={"/assets/chevron-circle-left.png"}
+                            alt={"left"}
+                            width={30}
+                            height={30}
+                            onClick={decIndex}
+                        />
+                    </div>
                 }
             </div>
         </div>
     );
 }
-// {contact.map((item, index) => (
-//     <div key={index}>
-//         {/* <img src={item.img} alt={item.title} /> */}
-        
-//         <Image
-//             src={item.img}
-//             alt={item.title}
-//             width={90}
-//             height={90}
-//         />
-//         <div>{item.title}</div>
-//         <div>{item.subTitle}</div>
-//     </div>
-// ))}

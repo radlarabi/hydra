@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Intorduction(){
     return (
         <div className="flex flex-col pt-[8vh]">
-            <div className="introTitle  flex flex-row">
+            <div className="introTitle  flex flex-row justify-center items-center">
                 <div className="intro1  flex flex-col pl-[2vw]">
                     <div className="title flex justify-start items-end ">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] font-semibold text-[36px]">
@@ -16,7 +16,7 @@ export default function Intorduction(){
                         <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px]">
                             TO HYDRA VR
                         </p>
-                        <div className="flex pl-[2vw] justify-start items-start">
+                        <div className="hidden lg:flex pl-[2vw] justify-start items-start">
                             <Image
                                 className="h-[100px] w-[220px]"
                                 src={"/assets/flesh.png"}
@@ -26,7 +26,7 @@ export default function Intorduction(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 bg-pue-200 flex justify-center items-center">
+                <div className="intro2 bg-pue-200 hidden lg:flex justify-center items-center">
                     <p className="text-[14px] text-slate-50 font-nav tracking-[0.1rem] ">
                     Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -35,7 +35,7 @@ export default function Intorduction(){
                     </p>
                 </div>
             </div>
-            <div className="aboutVr  flex flex-row">
+            <div className="aboutVr flex lg:flex-row flex-col">
 
                 <div className="intro1 flex justify-center items-center ">
                         <Image 
@@ -49,14 +49,14 @@ export default function Intorduction(){
                 <div className="intro2 flex flex-col">
                     <div className="aboutTit">
                     </div>
-                    <div className="aboutSubtitle flex justify-center items-start flex-col">
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] font-semibold">
+                    <div className="aboutSubtitle flex justify-center lg:items-start items-center flex-col">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] font-semibold hidden lg:flex">
                             ABOUT
                         </p>
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] ">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] hidden lg:flex">
                             HYDRA VR
                         </p>
-                        <p className="text-[14px] pt-[2vh] pb-[2vh] text-slate-50 font-nav tracking-[0.1rem] ">
+                        <p className="text-[14px] pt-[2vh] pb-[2vh] text-slate-50 font-nav tracking-[0.1rem] mx-4">
                             Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                             urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
                             dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
@@ -75,8 +75,8 @@ export default function Intorduction(){
                     </div>
                 </div>
             </div>
-            <div className="whyHydra  flex flex-row">
-                <div className="intro1 flex flex-col pl-[2vw]">
+            <div className="whyHydra  flex flex-col lg:flex-row">
+                <div className="intro1 flex justify-center items-center lg:justify-start flex-col pl-[2vw]">
                     <div className="title flex justify-start items-end pb-[1vh]">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] font-semibold">
                             WHY BUILD
@@ -86,7 +86,7 @@ export default function Intorduction(){
                         <p className="text-slate-50 font-nav tracking-[0.1rem] ">
                             WITH HYDRA ?
                         </p>
-                        <div className="flex pl-[2vw] justify-start items-start">
+                        <div className="hidden lg:flex pl-[2vw] justify-start items-start">
                             <Image
                                 className="h-[100px] w-[220px]"
                                 src={"/assets/flesh.png"}
@@ -96,7 +96,7 @@ export default function Intorduction(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 flex justify-center items-center">
+                <div className="intro2 hidden lg:flex justify-center items-center">
                     <p className="text-slate-50 font-nav tracking-[0.1rem] text-[14px]">
                         Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 

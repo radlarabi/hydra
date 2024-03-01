@@ -8,6 +8,7 @@ import Partners from "@/components/Partners"
 import HowHydra from "@/components/HowHydra"
 import JoinForm from "@/components/JoinForm"
 import Footer from "@/components/Footer"
+import CarouselCards  from "@/components/CarouselCards";
 
 export default function Home() {
   return (
@@ -22,17 +23,20 @@ export default function Home() {
       <div className="cards ">
         <Cards/>
       </div>
-      <div className="cards ">
+      <div className=" ">
         <Partners/>
       </div>
-      <div className="cards ">
+      <div className=" ">
         <HowHydra/>
       </div>
-      <div className="cards ">
+      <div className=" ">
         <JoinForm/>
       </div>
       <div className="footer ">
         <Footer/>
+      </div>
+      <div className="footer ">
+        <CarouselCards/>
       </div>
     </main>
   );

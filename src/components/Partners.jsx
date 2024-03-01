@@ -1,5 +1,7 @@
 import partners from "../../public/partners.json"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
+
 export default function Partners(){
     // /workspaces/hydra/public/partners.json
 

@@ -2,7 +2,6 @@ import card from "../../public/cards.json"
 import Image from "next/image";
 export default function Cards(){
     return (
-        //  lg:gap-x-28 gap-16 ml-[1rem] mr-[1rem]
         <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-[3rem] gap-[2rem] lg:mx-[4rem] mx-[2rem] ">
             {
                 card.map((card, index) =>(

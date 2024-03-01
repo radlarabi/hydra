@@ -39,12 +39,11 @@ export default function Intorduction(){
 
                 <div className="intro1 flex justify-center items-center ">
                         <Image 
-                            className="h-[457px] w-[424px]"
+                            className="h-[357px] w-[324px]"
                             src={"/assets/MaskGroup-0.png"}
                             width={324}
                             height={357}
                         />
-
                 </div>
                 <div className="intro2 flex flex-col">
                     <div className="aboutTit">

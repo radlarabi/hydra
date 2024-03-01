@@ -2,27 +2,27 @@
 export default function JoinForm(){
     return (
         <div className="  flex flex-col justify-center pt-[10vh]">
-            <div className="ml-[10vw] mr-[10vw]  bg-gray-800 rounded-[100px] bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card">
+            <div className="mx-[2vw] lg:mx-[10vw] bg-gray-800 rounded-[50px] lg:rounded-[100px] bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card">
                 <div className="title flex flex-col items-center justify-center">
-                    <p className="text-slate-200 text-[36px] p-[1vw]">
+                    <p className="text-slate-200 text-[1.5rem] lg:text-[36px] p-[1vw]">
                         JOIN HYDRA
                     </p>
-                    <div className="bg-slate-200 h-[1px] w-[10vw]"></div>
-                    <p className="text-slate-200 text-[36px] p-[1vw]">
+                    <div className="bg-slate-200 h-[1px] lg:w-[10vw] w-[40vw]"></div>
+                    <p className="text-slate-200 text-[1.5rem] lg:text-[36px] p-[1vw]">
                         Let’s Build Your VR Experience
                     </p>
                 </div>
                 <form action="">
                     <div className="form">
-                        <div className="flex justify-center items-center pb-4 ">
+                        <div className="flex flex-col lg:flex-row justify-center items-center pb-4 ">
                             <input className="h-[7vh] mr-[1vw]  rounded-3xl bg-transparent text-white  border-white border-[1px] indent-4" placeholder="First Name" type="text" />
                             <input className="h-[7vh] rounded-3xl bg-transparent text-white  border-white border-[1px] indent-4" placeholder="Last Name" type="text" />
                         </div>
-                        <div className="flex justify-center items-center p-4">
+                        <div className="flex flex-col lg:flex-row justify-center items-center p-4">
                             <input className="h-[7vh] mr-[1vw] rounded-3xl bg-transparent text-white  border-white border-[1px] indent-4" placeholder="Email" type="email" />
                             <input className="h-[7vh] rounded-3xl bg-transparent text-white  border-white border-[1px] indent-4" placeholder="Phone Number" type="text" />
                         </div>
-                        <div className="flex justify-center items-center pb-4">
+                        <div className="flex flex-col lg:flex-row justify-center items-center pb-4">
                             <input className="h-[7vh]  rounded-3xl bg-transparent text-white  border-white border-[1px] indent-4" placeholder="Subject" type="text" />
                         </div>
                         <div className="flex justify-center items-center pb-4">

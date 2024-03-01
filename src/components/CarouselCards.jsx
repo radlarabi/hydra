@@ -12,8 +12,8 @@ import Image from "next/image";
 
 export default function CarouselSpacing() {
   return (
-    <Carousel className="max-w-sm ml-16">
-      <CarouselPrevious className="bg-flesh-button border-custom-purple hover:bg-purple-500"/>
+    <Carousel className="max-w-[70vw] ml-16">
+      <CarouselPrevious className="m-0 p-0 bg-flesh-button border-custom-purple hover:bg-purple-500"/>
       <CarouselContent className="">
         {
           card.map((item, index) => (

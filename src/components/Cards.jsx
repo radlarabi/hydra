@@ -1,9 +1,26 @@
+'use client'
+import {useEffect ,useState} from "react" 
 import card from "../../public/cards.json"
 import Image from "next/image";
+import CarouselSpacing from "@/components/CarouselCards"
 export default function Cards(){
+    const [screenSize, setScreenSize] = useState({width: 0, height: 0})
+
+    useEffect(() => {
+        const updateSize = () => {
+            setScreenSize({width: window.innerWidth, height: window.innerHeight})
+        }
+
+        updateSize()
+
+        window.addEventListener('resize', updateSize)
+
+        return () => window.removeEventListener('resize', updateSize)
+    }, [])
     return (
         <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-[3rem] gap-[2rem] lg:mx-[4rem] mx-[2rem] ">
             {
+                screenSize.width >= 1200 ?
                 card.map((card, index) =>(
                     <div key={index} className="bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card rounded-[50px] lg:mx-[1rem] mx-[3rem] min-w-[10rem] ">
                         <div className="flex justify-center items-center">
@@ -33,7 +50,9 @@ export default function Cards(){
                             </button>
                         </div>
                     </div>
-                ))        
+                ))
+                : 
+                <CarouselSpacing width={screenSize.width}/>
             }
         </div>
     );

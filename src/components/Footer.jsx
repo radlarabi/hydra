@@ -10,6 +10,7 @@ export default function Footer(){
                 <div className="log  w-full  ml-[1vw] mr-[1vw] flex justify-center items-center">
                     <Image 
                         className=""
+                        alt=""
                         src={"/assets/Frame.png"}
                         width={185}
                         height={187}

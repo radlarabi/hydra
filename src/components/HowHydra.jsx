@@ -4,7 +4,7 @@ export default function HowHydra(){
     return (
         <div className=" flex flex-col">
             <div className="introTitle  flex flex-col lg:flex-row justify-center items-center">
-                <div className="intro1 flex flex-col pl-[2vw]">
+                <div className="intro1 flex flex-col pl-[2vw] w-[50%]">
                     <div className="title flex justify-center lg:justify-start items-end ">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] font-semibold text-[36px]">
                             HOW WE BUILD
@@ -24,7 +24,7 @@ export default function HowHydra(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 bg-pue-200 hidden lg:flex justify-center items-center">
+                <div className="intro2 bg-pue-200 hidden lg:flex justify-center items-center w-[50%]">
                     <p className="text-[14px] text-slate-50 font-nav tracking-[0.1rem] ">
                     Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 

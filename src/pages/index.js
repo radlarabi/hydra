@@ -8,6 +8,10 @@ import HowHydra from "@/components/HowHydra"
 import JoinForm from "@/components/JoinForm"
 import Footer from "@/components/Footer"
 
+export const metadata = {
+  title: "Hydra",
+}
+
 export default function Home() {
   return (
     <main className="bg-custom-blue">

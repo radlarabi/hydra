@@ -70,7 +70,7 @@ export default function Landing(){
 
                 </div> 
 
-                <div className="imageVr flex justify-center items-center ">           
+                <div className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
                         className="border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px] lg:h-[426px] h-[276px] lg:w-[490px] w-[340px]"
                         src="/assets/Mask_group.png"
@@ -84,8 +84,8 @@ export default function Landing(){
                 {
                     screenSize.width >= 930 ?
                     contact.map((item, index) => (
-                        <div className={"w-full flex justify-center items-center"}>
-                            <div key={index} className={` flex flex-row justify-center items-center  ${index == 0 ? '' : 'border-l'}`}>
+                        <div className={`w-full flex justify-center items-center ${index == 0 ? '' : 'border-l'}`}>
+                            <div key={index} className={` flex flex-row justify-center items-center `}>
                                 <Image
                                     className=""
                                     src={item.img}

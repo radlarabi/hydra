@@ -5,8 +5,8 @@ export default function Footer(){
     const faqs = ["F.A.Q", "SITEMAP", "CONDITIONS", "LICENSES"]; 
 
     return (
-        <div className=" pt-[10vh]">
-            <div className="mianFooter   flex justify-around items-center ">
+        <div className="pt-[10vh]">
+            <div className="mianFooter flex lg:flex-row flex-col justify-around items-center ">
                 <div className="log  w-full  ml-[1vw] mr-[1vw] flex justify-center items-center">
                     <Image 
                         className=""

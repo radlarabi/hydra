@@ -11,7 +11,6 @@ import card from "../../public/cards.json"
 import Image from "next/image";
 
 export default function CarouselSpacing(props) {
-  const width = 511;
   return (
     <Carousel className="max-w-[50vw] min-h-[40vh]">
       <CarouselPrevious className="m-0 p-0 bg-flesh-button border-custom-purple hover:bg-purple-500"/>

@@ -8,12 +8,12 @@ export default function Intorduction(){
             <div className="introTitle  flex flex-row justify-center items-center">
                 <div className="intro1  flex flex-col pl-[2vw]">
                     <div className="title flex justify-center lg:justify-start items-end ">
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] font-semibold text-[36px]">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] font-semibold lg:text-[36px] text-[20px]">
                             INTRODUCTION
                         </p>
                     </div>
                     <div className="subtitle flex">
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px]">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px]">
                             TO HYDRA VR
                         </p>
                         <div className="hidden lg:flex pl-[2vw] justify-start items-start">
@@ -47,10 +47,10 @@ export default function Intorduction(){
                 </div>
                 <div className="intro2 flex flex-col  w-[50%]">
                     <div className="aboutSubtitle flex justify-center lg:items-start items-center flex-col">
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] font-semibold hidden lg:flex">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px] font-semibold hidden lg:flex">
                             ABOUT
                         </p>
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] hidden lg:flex">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px] hidden lg:flex">
                             HYDRA VR
                         </p>
                         <p className="text-[14px] pt-[2vh] pb-[2vh] text-slate-50 font-nav tracking-[0.1rem] mx-4">
@@ -73,11 +73,11 @@ export default function Intorduction(){
             <div className="whyHydra  flex flex-col lg:flex-row">
                 <div className="intro1 lg:justify-start flex-col pl-[2vw] w-[50%]">
                     <div className="title pb-[1vh]">
-                        <p className="text-slate-50 font-nav tracking-[0.1rem] text-[36px] font-semibold">
+                        <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px] font-semibold">
                             WHY BUILD
                         </p>
                     </div>
-                    <div className="subtitle flex justify-start items-start pt-[1vh] text-[36px]">
+                    <div className="subtitle flex justify-start items-start pt-[1vh] lg:text-[36px] text-[20px]">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] ">
                             WITH HYDRA ?
                         </p>

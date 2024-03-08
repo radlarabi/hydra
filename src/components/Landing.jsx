@@ -34,9 +34,9 @@ export default function Landing(){
                 <div className="title  flex flex-col items-center justify-center "> 
                     
                     <motion.div 
-                        initial={{opacity: 0 , animationDelay: 2, y: -10}}
+                        initial={{opacity: 0 , animationDelay: 1, y: -10}}
                         whileInView={{opacity: 1 , y: 0}}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: 0.5 }}
                     
                         className="mainTitle  mb-2">
                         
@@ -50,7 +50,6 @@ export default function Landing(){
                             <span className="text-custom-purple font-bold  lg:text-[2.6rem] text-[2.3rem] tracking-wider leading-1">Virtual Reality</span>
                         </div>
 
-                    </motion.div>
 
                     <div className="subTitle lg:flex hidden ">
                         <p className="font-nav text-[15px] content-start ml-[5vw] mt-3 text-gray-300 tracking-[0.09rem] leading-[1.9rem]">
@@ -60,7 +59,12 @@ export default function Landing(){
                         </p>
                     </div>
 
-                    <div className="  flex lg:justify-start justify-center items-center ">
+                    </motion.div>
+                    <motion.div 
+                        initial={{opacity: 0 , animationDelay: 1, x: -10}}
+                        whileInView={{opacity: 1 , x: 0}}
+                        transition={{ duration: 0.5 }}
+                        className="  flex lg:justify-start justify-center items-center ">
                         <button className="submit ml-[5vw] tracking-wider text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl lg:pl-6 lg:pr-6 pr-[6vw] pl-[6vw]">
                             BUILD YOUR WORLD
                         </button>
@@ -73,17 +77,17 @@ export default function Landing(){
                             />
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div> 
 
                 <motion.div 
-                    initial={{ opacity: 0 , animationDelay: 2, x: 10}}
+                    initial={{ opacity: 0 , animationDelay: 1, x: 10}}
                     whileInView={{opacity: 1 , x: 0}}
                     transition={{ duration: 1 }}
                     className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
-                        className="border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px] lg:h-[426px] h-[276px] lg:w-[490px] w-[340px]"
+                        className="  h-[220px] w-[200px] lg:h-[420px] lg:w-[400px] md:h-[320px] md:w-[300px] border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px]"
                         src="/assets/Mask_group.png"
                         width={490}
                         height={426}

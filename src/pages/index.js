@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-custom-blue">
+    <main className="bg-custom-blue w-full">
       {/* <ScrollParallax className=""> */}
         {/* <Image 
           className="absolute"

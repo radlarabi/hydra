@@ -15,12 +15,12 @@ export default function JoinForm(){
                 <form action="">
                     <div className="form m-[1rem]">
                         <div className="flex flex-col lg:flex-row justify-center items-center">
-                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 mr-3" placeholder="First Name" type="text" />
-                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 ml-3" placeholder="Last Name" type="text" />
+                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 lg:mr-3" placeholder="First Name" type="text" />
+                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 lg:ml-3" placeholder="Last Name" type="text" />
                         </div>
                         <div className="flex flex-col lg:flex-row justify-center items-center">
-                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 mr-3" placeholder="Email" type="email" />
-                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 ml-3" placeholder="Phone Number" type="text" />
+                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 lg:mr-3" placeholder="Email" type="email" />
+                            <input className="h-[7vh] rounded-3xl bg-transparent text-white my-[10px] w-full border-white border-[1px] indent-4 lg:ml-3" placeholder="Phone Number" type="text" />
                         </div>
                         <div className="flex flex-col lg:flex-row justify-center items-center">
                             <input className="h-[7vh]  rounded-3xl bg-transparent text-white my-[10px] w-full  border-white border-[1px] indent-4" placeholder="Subject" type="text" />

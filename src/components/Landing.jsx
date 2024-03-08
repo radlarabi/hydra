@@ -105,7 +105,7 @@ export default function Landing(){
                 </motion.div>
 
             </div> 
-            <div className="flex justify-center  bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card mx-[3vw] my-[20px] rounded-[100px] min-h-[12vh] ">
+            <div className="flex justify-center  bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card mx-[3vw] my-[20px] rounded-[100px] min-h-[5rem] ">
                 {
                     screenSize.width >= 930 ?
                     contact.map((item, index) => (

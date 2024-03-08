@@ -32,6 +32,9 @@ export default function Header(){
                             alt="Hydra Logo"
                             onClick={() => {
                                 document.getElementById('Landing').scrollIntoView();
+                                enablePageScroll();
+                                isOpen ? setIsOpen(!isOpen) : '' 
+                                toggle ? setToggle(!toggle) : ''
                             }}
                             />
                     </div>

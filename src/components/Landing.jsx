@@ -35,9 +35,9 @@ export default function Landing(){
                 <div className="title  flex flex-col items-center justify-center "> 
                     
                     <motion.div 
-                        initial={{opacity: 0 , animationDelay: 2, y: -10}}
-                        whileInView={{opacity: 1 , y: 0}}
-                        transition={{duration: 1 }}
+                        // initial={{opacity: 0 , animationDelay: 2, y: -10}}
+                        // whileInView={{opacity: 1 , y: 0}}
+                        // transition={{duration: 1 }}
                     
                         className="mainTitle  mb-2">
                         

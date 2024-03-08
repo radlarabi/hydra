@@ -7,6 +7,8 @@ import Partners from "@/components/Partners"
 import HowHydra from "@/components/HowHydra"
 import JoinForm from "@/components/JoinForm"
 import Footer from "@/components/Footer"
+import Image from "next/image";
+import { ScrollParallax } from "react-just-parallax";
 
 export const metadata = {
   title: "Hydra",
@@ -15,8 +17,20 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="bg-custom-blue">
-      <Header/>
-      <Landing/>
+      {/* <ScrollParallax className=""> */}
+        {/* <Image 
+          className="absolute"
+          src={'/assets/Vector.svg'}
+          alt="Background"
+          width={1920}
+          height={1080}
+        /> */}
+      {/* </ScrollParallax> */}
+      {/* bg-[url('/assets/Vector.svg')] bg-no-repeat bg-cover */}
+      <div className="">
+        <Header/>
+        <Landing/>
+      </div>
       
       <Introduction/>
       <Cards/>

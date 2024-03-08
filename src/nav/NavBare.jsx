@@ -8,9 +8,9 @@ export default function NavBar(){
             <ul className="flex items-center justify-center">
                 {
                     items.map((item, index) =>(
-                        <li key={index} className="text-gray-200 text-[12px] font-nav font-semibold pl-[1vw] pr-[1vw] ">
+                        <a href={`#${item}`} key={index} className="text-gray-200 text-[12px] font-nav font-semibold pl-[1vw] pr-[1vw] hover:text-custom-purple cursor-pointer">
                             {item}
-                        </li>
+                        </a>
                     ))
                 }
             </ul>

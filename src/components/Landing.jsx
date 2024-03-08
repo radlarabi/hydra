@@ -1,7 +1,10 @@
 'use client'
 import Image from "next/image"
 import contact from "../../public/contact.json"
+import Victor1 from "../../public/assets/Vector1.svg"
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
 export default function Landing(){
     const [screenSize, setScreenSize] = useState({width: 0, height: 0})
     const [index, setIndex] = useState(0)
@@ -26,15 +29,20 @@ export default function Landing(){
         return () => window.removeEventListener('resize', updateSize)
     }, [])
     return(
-        <div className="landing ">
+        <div className="landing pt-[20vh]">
             <div className="main_title flex flex-col-reverse lg:flex-row ">
                 
                 <div className="title  flex flex-col items-center justify-center "> 
                     
-                    <div className="mainTitle  mb-2">
+                    <motion.div 
+                        initial={{ opacity: 0 , animationDelay: 2, y: -10}}
+                        whileInView={{opacity: 1 , y: 0}}
+                        transition={{ duration: 1 }}
+                    
+                        className="mainTitle  mb-2">
                         
                         <div className="title1 flex flex-row lg:justify-start ml-[5vw] justify-center ">
-                            <span className="pr-2 text-custom-purple font-bold lg:text-[2.6rem] text-[2.3rem] leading-1 tracking-wider">Dive </span>
+                            <span className="pr-2 text-custom-purple font-bold lg:text-[2.6rem] text-[2.3rem] leading-1 tracking-wider font-nav">Dive</span>
                             <p className="font-bold text-[2.2rem] lg:text-[2.5rem] text-gray-200 tracking-wider leading-1">Into The Depths</p>
                         </div>
                         
@@ -43,7 +51,7 @@ export default function Landing(){
                             <span className="text-custom-purple font-bold  lg:text-[2.6rem] text-[2.3rem] tracking-wider leading-1">Virtual Reality</span>
                         </div>
 
-                    </div>
+                    </motion.div>
 
                     <div className="subTitle lg:flex hidden ">
                         <p className="font-nav text-[15px] content-start ml-[5vw] mt-3 text-gray-300 tracking-[0.09rem] leading-[1.9rem]">
@@ -70,14 +78,18 @@ export default function Landing(){
 
                 </div> 
 
-                <div className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
+                <motion.div 
+                    initial={{ opacity: 0 , animationDelay: 2, x: 10}}
+                    whileInView={{opacity: 1 , x: 0}}
+                    transition={{ duration: 1 }}
+                    className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
                         className="border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px] lg:h-[426px] h-[276px] lg:w-[490px] w-[340px]"
                         src="/assets/Mask_group.png"
                         width={490}
                         height={426}
                     />
-                </div>
+                </motion.div>
 
             </div> 
             <div className="flex justify-center  bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card mx-[3vw] my-[20px] rounded-[100px] min-h-[12vh] ">
@@ -137,3 +149,4 @@ export default function Landing(){
         </div>
     );
 }
+

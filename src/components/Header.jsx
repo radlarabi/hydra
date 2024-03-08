@@ -4,13 +4,13 @@ import Image from "next/image";
 import NavBar from "@/nav/NavBare";
 export default function Header(){
     return(
-        <div className="flex justify-between pt-4">
+        <div className="flex fixed justify-between backdrop-blur-sm bg-custom-blue/10 w-full z-50">
             <div className="logo flex justify-center">
                 <div className="mt-1  mr-[1vw]">
                     <Image
                         src="/assets/Frame.png"
-                        width={91}
-                        height={92}
+                        width={81}
+                        height={82}
                         alt="Hydra Logo"
                     />
                 </div>

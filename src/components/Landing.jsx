@@ -27,6 +27,15 @@ export default function Landing(){
 
         return () => window.removeEventListener('resize', updateSize)
     }, [])
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            index === 2 ? setIndex(0) : setIndex(index + 1);
+        }, 6000);
+        
+        return () => clearInterval(interval);
+    }, [index]);
+    
     return(
         <div className="landing pt-[20vh]">
             <div className="main_title flex flex-col-reverse lg:flex-row ">
@@ -117,7 +126,8 @@ export default function Landing(){
                         </div>
                     ))
                     :
-                    <div className="flex justify-between items-center w-full mx-4">
+                    <motion.div 
+                        className="flex justify-between items-center w-full mx-4">
                         <Image
                             className=""
                             src={"/assets/chevron-circle-right.png"}
@@ -147,7 +157,7 @@ export default function Landing(){
                             height={30}
                             onClick={decIndex}
                         />
-                    </div>
+                    </motion.div>
                 }
             </div>
         </div>

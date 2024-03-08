@@ -26,7 +26,7 @@ export default function Intorduction(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 bg-pue-200 hidden lg:flex justify-center items-center w-[50%]">
+                <div className="intro2 bg-pue-200 hidden lg:flex justify-center items-center lg:w-[50%]">
                     <p className="text-[14px] text-slate-50 font-nav tracking-[0.1rem] ">
                     Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -36,16 +36,16 @@ export default function Intorduction(){
                 </div>
             </div>
             <div className="aboutVr flex lg:flex-row flex-col">
-                <div className="intro1 flex justify-center items-center  w-[50%]">
-                        <Image 
-                            className=""
-                            alt=""
-                            src={"/assets/MaskGroup-0.png"}
-                            width={324}
-                            height={357}
-                        />
+                <div className="intro1 flex justify-center items-center lg:w-[50%]">
+                    <Image 
+                        className=""
+                        alt=""
+                        src={"/assets/MaskGroup-0.png"}
+                        width={324}
+                        height={357}
+                    />
                 </div>
-                <div className="intro2 flex flex-col  w-[50%]">
+                <div className="intro2 flex flex-col  lg:w-[50%]">
                     <div className="aboutSubtitle flex justify-center lg:items-start items-center flex-col">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px] font-semibold hidden lg:flex">
                             ABOUT
@@ -70,14 +70,14 @@ export default function Intorduction(){
                     </div>
                 </div>
             </div>
-            <div className="whyHydra  flex flex-col lg:flex-row">
-                <div className="intro1 lg:justify-start flex-col pl-[2vw] w-[50%]">
-                    <div className="title pb-[1vh]">
+            <div className="whyHydra  flex flex-col lg:flex-row lg:mt-[4rem] mt-[1rem]">
+                <div className="intro1 lg:justify-start flex-col pl-[2vw] lg:w-[50%]">
+                    <div className="title pb-[1vh] flex lg:justify-start justify-center items-center">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] lg:text-[36px] text-[20px] font-semibold">
                             WHY BUILD
                         </p>
                     </div>
-                    <div className="subtitle flex justify-start items-start pt-[1vh] lg:text-[36px] text-[20px]">
+                    <div className="subtitle flex lg:justify-start lg:items-start justify-center items-center pt-[1vh] lg:text-[36px] text-[20px]">
                         <p className="text-slate-50 font-nav tracking-[0.1rem] ">
                             WITH HYDRA ?
                         </p>
@@ -91,7 +91,7 @@ export default function Intorduction(){
                         </div>
                     </div>
                 </div>
-                <div className="intro2 hidden lg:flex justify-center items-center w-[50%]">
+                <div className="intro2 hidden lg:flex justify-center items-center lg:w-[50%]">
                     <p className="text-slate-50 font-nav tracking-[0.1rem] text-[14px]">
                         Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                         nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 

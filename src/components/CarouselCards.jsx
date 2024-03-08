@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function CarouselSpacing(props) {
   return (
-    <Carousel className="max-w-[50vw] min-h-[40vh]">
+    <Carousel className="max-w-[50vw] min-h-[40vh] lg:mx-0 mx-0" >
       <CarouselPrevious className="m-0 p-0 bg-flesh-button border-custom-purple hover:bg-purple-500"/>
       <CarouselContent className="">
         {
@@ -25,16 +25,16 @@ export default function CarouselSpacing(props) {
                       <Image src={item.img} alt={item.title} width={160} height={160} />
                       <span className="text-2xl font-semibold text-gray-200">{item.title}</span>
                       
-                      <div className=" flex justify-center items-center m-4">
+                      <div className=" flex justify-center items-center lg:m-4">
                           <div className=" bg-slate-200 h-[0.1px]"></div>
                       </div>
                       
-                      <div className="flex justify-center items-center m-4">
+                      <div className="flex justify-center items-center lg:m-4 my-1">
                           <p className="text-[12px] text-slate-100">
                               {item.subTitle}
                           </p>
                       </div>
-                      <div className="flex justify-center items-center m-4">
+                      <div className="flex justify-center items-center lg:m-4">
                           <button className="submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl p-[1rem]">
                               TRY IT NOW
                           </button>

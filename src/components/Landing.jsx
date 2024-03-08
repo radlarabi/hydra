@@ -37,7 +37,7 @@ export default function Landing(){
     }, [index]);
     
     return(
-        <div className="landing pt-[20vh]">
+        <div className="landing lg:pt-[20vh]" id="Landing">
             <div className="main_title flex flex-col-reverse lg:flex-row ">
                 
                 <div className="title  flex flex-col items-center justify-center "> 

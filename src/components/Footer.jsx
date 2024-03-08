@@ -7,16 +7,16 @@ export default function Footer(){
     return (
         <div className="pt-[10vh]">
             <div className="mianFooter flex lg:flex-row flex-col justify-around items-center ">
-                <div className="log  w-full  ml-[1vw] mr-[1vw] flex justify-center items-center">
+                <div className="log w-full mx-[1vw] flex justify-center items-center">
                     <Image 
-                        className=""
+                        className="h-[98px] w-[100px] lg:h-[185px] lg:w-[187px]"
                         alt=""
                         src={"/assets/Frame.png"}
                         width={185}
                         height={187}
                     />
                 </div>
-                <div className="navLinks  w-full  ml-[1vw] mr-[1vw] flex justify-center items-center">
+                <div className="navLinks  w-full  ml-[1vw] mr-[1vw] hidden lg:flex justify-center items-center">
                     <ul className="flex flex-col items-start justify-center">
                         {
                             Links.map((link, index) => (
@@ -27,7 +27,7 @@ export default function Footer(){
                         }
                     </ul>
                 </div>
-                <div className="faq  w-full  ml-[1vw] mr-[1vw] flex justify-center items-center">
+                <div className="faq  w-full  ml-[1vw] mr-[1vw] hidden lg:flex justify-center items-center">
                     <ul className="flex flex-col items-start justify-start">
                         {
                             faqs.map((faq, index) => (
@@ -61,7 +61,7 @@ export default function Footer(){
                     </div>
                     <div className="  w-full flex items-center justify-center">
                         <div className="signUp">
-                            <button type="button" className="p-[1rem] submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl">
+                            <button type="button" className="p-[1rem] px-[3rem] submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl">
                                 BUILD YOUR WORLD
                             </button>
                         </div>           
@@ -72,8 +72,8 @@ export default function Footer(){
                 
             </div>
             <div className="copyright flex justify-center items-center">
-                <p className="text-slate-200 pt-[2vh] pb-[2vh] text-[14px] font-nav pl-[1vw] pr-[1vw]">
-                    2023 © HYDRA LANDING PAGE - DESIGNED BY ZINE. E. FALOUTI && CLONED BY RADOUAN LARABI 
+                <p className="text-slate-200 py-[2vh] text-[14px] font-nav font-bold px-[1vw]">
+                    2023 © HYDRA LANDING PAGE - Designed BY ZINE. E. FALOUTI - Cloned BY RADOUAN LARABI 
                 </p>
             </div>
         </div>

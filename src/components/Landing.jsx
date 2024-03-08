@@ -33,10 +33,10 @@ export default function Landing(){
                 
                 <div className="title  flex flex-col items-center justify-center "> 
                     
-                    <motion.div 
-                        initial={{opacity: 0 , animationDelay: 1, y: -10}}
-                        whileInView={{opacity: 1 , y: 0}}
-                        transition={{ duration: 0.5 }}
+                    <motion.div     
+                        initial={{y: -10, scale:0.95}}
+                        animate={{y: 0, scale:1}}
+                        transition={{duration: 1}}
                     
                         className="mainTitle  mb-2">
                         
@@ -61,9 +61,10 @@ export default function Landing(){
 
                     </motion.div>
                     <motion.div 
-                        initial={{opacity: 0 , animationDelay: 1, x: -10}}
-                        whileInView={{opacity: 1 , x: 0}}
-                        transition={{ duration: 0.5 }}
+                        initial={{x: -10, scale:0.95}}
+                        animate={{x: 0, scale:1}}
+                        transition={{duration: 1}}
+
                         className="  flex lg:justify-start justify-center items-center ">
                         <button className="submit ml-[5vw] tracking-wider text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl lg:pl-6 lg:pr-6 pr-[6vw] pl-[6vw]">
                             BUILD YOUR WORLD
@@ -82,9 +83,9 @@ export default function Landing(){
                 </div> 
 
                 <motion.div 
-                    initial={{ opacity: 0 , animationDelay: 1, x: 10}}
-                    whileInView={{opacity: 1 , x: 0}}
-                    transition={{ duration: 1 }}
+                    initial={{x: -10, scale:0.95}}
+                    animate={{x: 0, scale:1}}
+                    transition={{duration: 1}}
                     className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
                         className="  h-[220px] w-[200px] lg:h-[420px] lg:w-[400px] md:h-[320px] md:w-[300px] border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px]"

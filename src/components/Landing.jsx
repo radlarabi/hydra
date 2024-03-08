@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import contact from "../../public/contact.json"
-import Victor1 from "../../public/assets/Vector1.svg"
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -35,9 +34,9 @@ export default function Landing(){
                 <div className="title  flex flex-col items-center justify-center "> 
                     
                     <motion.div 
-                        // initial={{opacity: 0 , animationDelay: 2, y: -10}}
-                        // whileInView={{opacity: 1 , y: 0}}
-                        // transition={{duration: 1 }}
+                        initial={{opacity: 0 , animationDelay: 2, y: -10}}
+                        whileInView={{opacity: 1 , y: 0}}
+                        transition={{ duration: 1 }}
                     
                         className="mainTitle  mb-2">
                         
@@ -79,9 +78,9 @@ export default function Landing(){
                 </div> 
 
                 <motion.div 
-                    // initial={{ opacity: 0 , animationDelay: 2, x: 10}}
-                    // whileInView={{opacity: 1 , x: 0}}
-                    // transition={{ duration: 1 }}
+                    initial={{ opacity: 0 , animationDelay: 2, x: 10}}
+                    whileInView={{opacity: 1 , x: 0}}
+                    transition={{ duration: 1 }}
                     className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
                         className="border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px] lg:h-[426px] h-[276px] lg:w-[490px] w-[340px]"

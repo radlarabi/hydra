@@ -27,10 +27,8 @@ export default function Home() {
         /> */}
       {/* </ScrollParallax> */}
       {/* bg-[url('/assets/Vector.svg')] bg-no-repeat bg-cover */}
-      <div className="">
-        <Header/>
-        <Landing/>
-      </div>
+      <Header/>
+      <Landing/>
       
       <Introduction/>
       <Cards/>

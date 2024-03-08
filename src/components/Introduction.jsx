@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Intorduction(){
     return (
-        <div className="flex flex-col pt-[8vh]">
+        <div className="flex flex-col pt-[8vh]" id="ABOUT">
             <div className="introTitle  flex flex-row justify-center items-center">
                 <div className="intro1  flex flex-col pl-[2vw]">
                     <div className="title flex justify-center lg:justify-start items-end ">

@@ -18,7 +18,7 @@ export default function Cards(){
         return () => window.removeEventListener('resize', updateSize)
     }, [])
     return (
-        <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-[3rem] gap-[2rem] lg:mx-[4rem] mx-[2rem] ">
+        <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-[3rem] gap-[2rem] lg:mx-[4rem] mx-[2rem] " id="SERVICE">
             {
                 screenSize.width >= 1200 ?
                 card.map((card, index) =>(

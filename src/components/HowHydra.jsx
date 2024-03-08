@@ -2,7 +2,7 @@ import Image from "next/image"
 import steps from "../../public/steps.json"
 export default function HowHydra(){
     return (
-        <div className=" flex flex-col">
+        <div className=" flex flex-col" id="HOW TO">
             <div className="introTitle  flex flex-col lg:flex-row justify-center items-center">
                 <div className="intro1 flex flex-col pl-[2vw] w-[50%]">
                     <div className="title flex justify-center lg:justify-start items-end ">

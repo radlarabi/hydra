@@ -6,7 +6,7 @@ export default function Partners(){
     // /workspaces/hydra/public/partners.json
 
     return(
-        <div className=" pt-[5vh]">
+        <div className=" pt-[5vh]" id="TECHNOLOGIES">
             <div className=" title flex justify-center items-center bg-[url('/assets/metaverse.png')] bg-contain bg-no-repeat bg-center min-h-[35vh]">
                 <div className="flex flex-col justify-center items-center">
                     <p className="text-slate-200 text-[26px] lg:text-[36px] font-bold">TECHNOLOGIES & HARDWARE</p>

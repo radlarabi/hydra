@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.cdnfonts.com/css/cartoon-free');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 .bg-custom-opacity {
     background-image: url('../../public/assets/metaverse.png');
     opacity: 0.5; /* Adjust the opacity value as needed */

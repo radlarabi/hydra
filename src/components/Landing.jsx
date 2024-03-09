@@ -145,8 +145,8 @@ export default function Landing(){
                                 height={61}
                                 />
                             <div className="ml-[1vw]">
-                                <div className="text-[24px] text-gray-200">{contact[index].title}</div>
-                                <div className="text-[12px] text-gray-200">{contact[index].subTitle}</div>
+                                <div className="lg:text-[24px] text-[22px] text-gray-200">{contact[index].title}</div>
+                                <div className="lg:text-[12px] text-[10px] text-gray-200">{contact[index].subTitle}</div>
                             </div>
                         </div>
                         <Image

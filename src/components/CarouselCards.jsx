@@ -22,7 +22,7 @@ export default function CarouselSpacing(props) {
                 <div className="">
                   <Card className="bg-gradient-to-r from-purple-card via-custom-radial1 to-purple-card border-none ">
                     <CardContent className="flex flex-col aspect-square items-center justify-center">
-                      <Image src={item.img} alt={item.title} width={160} height={160} />
+                      <Image className={"customDropShadowCards"} src={item.img} alt={item.title} width={160} height={160} />
                       <span className="text-2xl font-semibold text-gray-200">{item.title}</span>
                       
                       <div className=" flex justify-center items-center lg:m-4">

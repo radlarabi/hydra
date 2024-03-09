@@ -56,3 +56,6 @@ html {
 .customDropShadow{
   filter: drop-shadow(5px 0 11px #c084fc) 
 }
+.customDropShadowCards{
+  filter: drop-shadow(5px 0 11px #6c32a7) 
+}

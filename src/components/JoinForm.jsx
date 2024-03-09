@@ -31,7 +31,7 @@ export default function JoinForm(){
                             </textarea>
                         </div>
                         <div className="flex justify-center items-center pt-[4vh]">
-                            <button className="submit ml-[5vw] tracking-wider text-gray-800 text-[12px] font-nav font-semibold p-4 bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl lg:pl-10 lg:pr-10 pr-[6vw] pl-[6vw]">
+                            <button className="text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300  rounded-3xl px-9 hover:border-custom-purple hover:shadow-[0px_0px_0px_2px_rgba(255,255,255,255.3)] hover:text-white hover:bg-none">
                                 SEND TO HYDRA
                             </button>
                         </div>

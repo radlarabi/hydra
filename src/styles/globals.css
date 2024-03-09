@@ -52,3 +52,7 @@ html {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
+
+.customDropShadow{
+  filter: drop-shadow(5px 0 11px #c084fc) 
+}

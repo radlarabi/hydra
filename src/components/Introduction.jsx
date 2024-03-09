@@ -64,7 +64,7 @@ export default function Intorduction(){
                             retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                             n tempor.
                         </p>
-                        <button className="text-gray-800 text-[12px] font-nav tracking-[0.1rem] font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300 rounded-3xl pl-6 pr-6">
+                        <button className="text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300  rounded-3xl px-9 hover:border-custom-purple  hover:shadow-[0px_0px_0px_2px_rgba(255,255,255,255.3)] hover:text-white hover:bg-none">
                             LET'S GET IN TOUCH
                         </button>
                     </div>

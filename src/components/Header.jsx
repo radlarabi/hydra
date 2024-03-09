@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import NavBar from "@/nav/NavBare";
+import {motion} from "framer-motion"
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 export default function Header(){
@@ -24,7 +25,9 @@ export default function Header(){
         <>
             <div className="flex lg:fixed justify-between backdrop-blur-sm bg-custom-blue/10 w-full z-50">
                 <div className="logo flex justify-center">
-                    <div className="mt-1 mr-[1vw]">
+                    <motion.div 
+                        whileHover={{rotate: "90deg"}}
+                        className="mt-1 mr-[1vw]">
                         <Image
                             src="/assets/Frame.png"
                             width={81}
@@ -37,7 +40,7 @@ export default function Header(){
                                 toggle ? setToggle(!toggle) : ''
                             }}
                             />
-                    </div>
+                    </motion.div>
                     <div className="mt-6 mr-[1vw]">
                         <Image
                             src="/assets/Hydra.png"
@@ -63,11 +66,11 @@ export default function Header(){
                 </div>
                 <div className="hidden lg:flex justify-around ">
                     <div className="login mt-6 mx-3">
-                        <button type="button" className="text-gray-200 text-[12px] font-nav font-semibold  border-gray-200 border-solid border-2 rounded-3xl p-3 pl-6 pr-6">CONTACT US</button>
+                        <button type="button" className="text-gray-200 text-[12px] font-nav font-semibold  border-gray-200 border-solid border-2 rounded-3xl p-3 px-6 hover:border-custom-purple hover:shadow-lg hover:shadow-custom-purple/30">CONTACT US</button>
                     </div>
                     
                     <div className="signUp mt-6 mx-3">
-                        <button type="button" className="text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300 rounded-3xl pl-6 pr-6">JOING HYDRA</button>
+                        <button type="button" className="text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300  rounded-3xl px-6 hover:border-custom-purple hover:shadow-[0px_0px_0px_2px_rgba(255,255,255,255.3)] hover:text-white hover:bg-none">JOING HYDRA</button>
                     </div>
                 </div>
             </div>

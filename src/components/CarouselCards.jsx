@@ -35,7 +35,7 @@ export default function CarouselSpacing(props) {
                           </p>
                       </div>
                       <div className="flex justify-center items-center lg:m-4">
-                          <button className="submit tracking-wider text-gray-800 text-[12px] font-nav font-semibold bg-gradient-to-r from-purple-400 to-custom-purple rounded-3xl p-[1rem]">
+                          <button className="text-gray-800 text-[12px] font-nav font-semibold p-3 bg-gradient-to-r from-purple-500 to-purple-300  rounded-3xl px-9 hover:border-custom-purple  hover:shadow-[0px_0px_0px_2px_rgba(255,255,255,255.3)] hover:text-white hover:bg-none">
                               TRY IT NOW
                           </button>
                       </div>

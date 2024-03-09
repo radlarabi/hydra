@@ -50,13 +50,13 @@ export default function Landing(){
                         className="mainTitle  mb-2">
                         
                         <div className="title1 flex flex-row lg:justify-start ml-[5vw] justify-center ">
-                            <span className="pr-2 text-custom-purple font-bold lg:text-[2.6rem] text-[2.3rem] leading-1 tracking-wider font-nav">Dive</span>
-                            <p className="font-bold text-[2.2rem] lg:text-[2.5rem] text-gray-200 tracking-wider leading-1">Into The Depths</p>
+                            <span className="pr-2 text-custom-purple font-bold lg:text-[2.6rem] xl:text-[3rem] text-[2.3rem] leading-1 tracking-wider font-nav">Dive</span>
+                            <p className="font-bold text-[2.2rem] lg:text-[2.5rem] xl:text-[3rem] text-gray-200 tracking-wider leading-1">Into The Depths</p>
                         </div>
                         
                         <div className="title2 flex flex-row lg:justify-start justify-center ml-[5vw] just">
-                            <p className="font-bold text-[2.2rem] pr-2 text-gray-200 lg:text-[2.5rem] tracking-wider leading-1">Of </p>
-                            <span className="text-custom-purple font-bold  lg:text-[2.6rem] text-[2.3rem] tracking-wider leading-1">Virtual Reality</span>
+                            <p className="font-bold text-[2.2rem] pr-2 text-gray-200 lg:text-[2.5rem] xl:text-[3rem] tracking-wider leading-1">Of </p>
+                            <span className="text-custom-purple font-bold  lg:text-[2.5rem] xl:text-[3rem] text-[2.3rem] tracking-wider leading-1">Virtual Reality</span>
                         </div>
 
 
@@ -95,9 +95,9 @@ export default function Landing(){
                     initial={{x: -10, scale:0.95}}
                     animate={{x: 0, scale:1}}
                     transition={{duration: 1}}
-                    className="imageVr flex justify-center items-center w-auto lg:w-[60vw]">           
+                    className="imageVr flex xl:justify-end justify-center items-center w-auto lg:w-[60vw]">           
                     <Image
-                        className="  h-[220px] w-[200px] lg:h-[420px] lg:w-[400px] md:h-[320px] md:w-[300px] border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px]"
+                        className="  h-[220px] w-[200px] xl:h-[520px] xl:w-[500px] lg:h-[420px] lg:w-[400px] md:h-[320px] md:w-[300px] border-custom-dark-gray border-solid lg:border-[20px] border-[12px] rounded-3xl rounded-tr-[100px] rounded-br-[100px] rounded-bl-[250px] rounded-tl-[100px]"
                         src="/assets/Mask_group.png"
                         width={490}
                         height={426}

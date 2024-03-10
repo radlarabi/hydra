@@ -72,9 +72,6 @@ export default function Footer(){
                     </div>
                 </div>
             </div>
-            <div className="Border  ">
-                
-            </div>
             <div className="copyright flex justify-center items-center">
                 <p className="text-slate-200 py-[2vh] text-[14px] font-nav font-bold px-[1vw]">
                     2023 © HYDRA LANDING PAGE - Designed BY ZINE. E. FALOUTI - Cloned BY RADOUAN LARABI 
